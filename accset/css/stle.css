@@ -108,11 +108,11 @@ html {
     width: 150px;
     height: auto;
     margin: 0px 10px 0px 0px;
-
+    transition: opacity 0.3s ease-in-out;
 }
 .news-thumbnail:hover {
-    transform: rotate(0deg) scale(1);
     opacity:0.8;
+    transition: opacity 0.3s ease-in-out;
 }
 .news-meta {
     height: 89px;
@@ -155,6 +155,11 @@ html {
 .movie-item {
     position: relative;
     overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+.movie-item:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
 }
 #content
 .movie-item
@@ -185,3 +190,23 @@ html {
     width: 210px;
     height: 290px;
 }
+
+.tray-movie {
+    background: #d80f16;
+    border-radius: 2px;
+    clear: both;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 6px 12px;
+    text-align: center;
+    user-select: none;
+    width: 100px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+.loading a {
+    text-decoration: none;
+}
+
